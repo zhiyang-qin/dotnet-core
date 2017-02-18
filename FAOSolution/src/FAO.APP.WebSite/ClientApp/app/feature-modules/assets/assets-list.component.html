@@ -1,0 +1,39 @@
+﻿<h1>Assets</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>PropType</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Department</th>
+            <th>
+                <a href="" [routerLink]="['/AssetCreate']">
+                    Add
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngIf="!assets.length">
+            <td colspan="5">Loading...</td>
+        </tr>
+        <tr *ngFor="let asset of assets">
+            <td>{{asset.assetId}}</td>
+            <td>{{asset.propType}}</td>
+            <td>{{asset.description}}</td>
+            <td>{{asset.location}}</td>
+            <td>{{asset.department}}</td>
+            <td>
+                <a href="" [routerLink]="['/assets', asset.assetId]">
+                    Edit
+                </a>
+                <!--<a href="javascript:void(0)" (click)="deleteModel(asset)">
+                    Delete
+                </a>-->
+            </td>
+        </tr>
+    </tbody>
+</table>

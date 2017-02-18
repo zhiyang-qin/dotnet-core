@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "FAO.BLL.BusinessTypes": "1.0.0-*",
+    "FAO.BLL.CalcEngine": "1.0.0-*",
+    "FAO.BLL.Calendar": "1.0.0-*",
+    "FAO.BLL.Rulebase": "1.0.0-*",
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+﻿<h1>Update Asset</h1>
+
+<form>
+    <div class="form-group">
+        <label for="propType">Prop Type</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="model.propType" name="propType" required>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="model.description" name="description">
+    </div>
+    <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="model.location" name="location">
+    </div>
+    <div class="form-group">
+        <label for="department">Department</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="model.department" name="department">
+    </div>
+    <button type="button" (click)="onSubmit()"
+            class="btn btn-primary">
+        Add
+    </button>
+</form>
